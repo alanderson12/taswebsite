@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Database</title>
+    <style>
+      table, td, th {
+        border: 1px solid black;
+      }
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 15px;
+      }
+      tr:hover {background-color:#f5f5f5;}
+      tr:nth-child(even) {background-color: #f2f2f2;}
+      th {
+        background-color: lightblue;
+        color: white;
+      }
+      header {margin : 30px}
+      footer {margin : 30px}
+    </style>
+</head>
+<body>
+    <header>
+      <h1>Database</h1>
+      <button type="button" onclick = "getUserTable()">Load User Table</button>
+      <button type="button" onclick = "getFeedbackTable()">Load Feedback Table</button>
+      <button type="button" onclick = "getRankingTable()">Load Ranking Table</button>
+    </header>
+    <script type = "text/javascript" src = "./resources/scripts/tables.js"></script> 
+    <div id="users">
+              
+    </div>
+    <div id="feedback">
+      
+    </div>
+    <div id="ranking">
+      
+    </div>
+  </body>
+</body>
+<footer>
+  <a href="index.html"><button type="button">HOME</button></a>
+</footer>
+</html>
+</html>
