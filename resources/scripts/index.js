@@ -54,7 +54,7 @@ function move() {
 
 function getFeedback(){
   //const m = "https://localhost:5001/api/feedback/"
-  const m = "https://tasapi.herokuapp.com/api/feedbacks/"
+  const m = "https://tasapi.herokuapp.com/api/feedback/"
 
   fetch(m).then(function(response){
       return response.json();
