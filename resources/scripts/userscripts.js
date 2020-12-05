@@ -56,7 +56,8 @@ function getUserSurvey(){
 
 function getFeedback(){
     const userID = 9;
-    const m = "https://localhost:5001/api/feedback/" + userID; //CHANGE 
+    //const m = "https://localhost:5001/api/feedback/" + userID; //CHANGE 
+    const m = "https://tasapi.herokuapp.com/api/feedback" + userID
   
     fetch(m).then(function(response){
         return response.json();
@@ -73,9 +74,11 @@ function getFeedback(){
         console.log(error);
     });
 }
+
 function getRanking(){
     const userID = 9;
-    const m = "https://localhost:5001/api/rankings/" + userID; //CHANGE 
+    //const m = "https://localhost:5001/api/rankings/" + userID; //CHANGE 
+    const m = "https://tasapi.herokuapp.com/api/rankings" + userID
   
     fetch(m).then(function(response){
         return response.json();
